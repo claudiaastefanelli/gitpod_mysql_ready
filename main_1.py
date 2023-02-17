@@ -1,3 +1,4 @@
+#creo il db
 import mysql.connector
 
 mydb = mysql.connector.connect(
