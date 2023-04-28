@@ -1,6 +1,16 @@
 from flask import render_template
 from flask import Flask
 
+import mysql.connector
+
+mydb = mysql.connector.connect(
+  host="localhost",
+  user="root",
+  password="",
+  database="CLASH_ROYALE"
+)
+
+mycursor = mydb.cursor()
 
 app = Flask(__name__)
 
